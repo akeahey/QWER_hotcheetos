@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>QWER Hacks!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: black;
+  }
+  .sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: lightskyblue;
+}
+
+.main {
+  margin-left: 230px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
+
+p {font-size: 16px;}
+h1{
+      color: white;
+      text-align: center;
+  }
+button{
+    background-color: darkviolet; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    border-radius: 4px;
+}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    /* background-image: white;  */
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.fromental.co.uk%2Fwp-content%2Fuploads%2F2016%2F05%2FKintsugi-toki-R037P-01c-copy.jpg&f=1&nofb=1");
+    opacity: 0.5;
+    color: white;
+  }
+  .bg-2 { 
+    background: url("https://www.publicdomainpictures.net/pictures/30000/velka/cork-board.jpg") no-repeat center fixed; 
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: lightskyblue;
+    opacity: 0.8;
+    color: white;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+
+  .accordion {
+  background-color: white;
+  color: darkgray;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  color: dimgrey;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  text-align: center;
+  transition: max-height 0.2s ease-out;
+}
+
+ul,li{
+  list-style:none;
+}
+ul{
+  overflow:hidden;
+  padding:3em;
+}
+ul li {
+  text-decoration:none;
+  color:#000;
+  background:lightcyan;
+  display:block;
+  height:10em;
+  width:10em;
+  padding:1em;
+  /* Firefox */
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  /* Safari+Chrome */
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  /* Opera */
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+ul li{
+  margin:1em;
+  float:left;
+}
+input[type=text] {
+  border: none;
+  outline: none;
+  background-color: lightcyan;
+  overflow-y:auto
+}
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: none;
+  opacity: 0.8;
+}
+
+div.transbox p{
+  margin: 5%;
+  color: #000000;
+}
+
+div.transbox h3{
+  margin: 5%;
+  padding:1em;
+  color: #000000;
+}
+  </style>
+</head>
+<body>
+
+<div class="sidenav">
+    <h3> Resources </h3>
+    <button class="accordion">Abusive Relationships</button>
+    <div class="panel">
+        <p>Lorem ipsum...</p>
+    </div>
+    <button class="accordion">Toxic Relationships</button>
+    <div class="panel">
+        <p>Lorem ipsum...</p>
+    </div>
+    <button class="accordion">Coping with Isolation</button>
+    <div class="panel">
+        <p>Lorem ipsum...</p>
+    </div>
+    <button class="accordion">Intersectional Resources</button>
+    <div class="panel">
+        <p>Lorem ipsum...</p>
+    </div>
+    <button class="accordion">Hotlines</button>
+    <div class="panel">
+        <p><a href="https://www.thetrevorproject.org/">The Trevor Project 24/7 Hotline</a></p>
+        <p><a href="https://translifeline.org/">The Trans Lifeline (US & Canada)</a></p>
+        <p><a href="https://www.thehotline.org/">Domestic Violence Hotline</a></p>
+        <p><a href="https://www.crisistextline.org/">Crisis 24/7 Textline TEXT 'Home'</a></p>
+    </div>
+</div>
+
+<div class="main">
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <h1> Kintsugi <button id="get-away">Emergency Exit</button> </h1>
+    </div>
+  </nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <i class="fas fa-heart" style="font-size:200px;color:lightskyblue;"></i>
+  <p></p>
+  <div class="transbox">
+    <h3> Seek solidarity with other LGBTQIA+ folks </h3>
+    <p> Join spaces reflecting your intersectional identities.</p>
+    <p> Create meaning. </p>
+    <p> Post below about your own experiences at home and see how others are dealing with this time. </p>
+  </div>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <ul>
+    <li>
+      <p><input type="text" id="fname" placeholder="write something here!"><br></p>
+  </li>
+    <li>
+        <p>user1</p>
+        <p>This is an example for my example post. For my post that I am exampling.</p>
+    </li>
+    <li>
+        <p>user2</p>
+        <p>and here we go again</p>
+    </li>
+    <li>
+      <p>*DJ Khalid voice*</p>
+      <p>ANOTHER ONE</p>
+  </li>
+  </ul>
+</div>
+
+</div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+    
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+
+      // GET AWAY BUTTON FUNCTION
+    $("#get-away").on("click", function() {
+    window.open("http://weather.com", "_newtab");
+    window.location.replace('http://google.com');
+    });
+
+// I owe Luca Soldaini my life for this 
+
+// PutItemCommand
+
+const { DynamoDBClient, ScanCommand } = require("@aws-sdk/client-dynamodb");
+const REGION = "us-east-2";
+
+// Set reading parameters - this will return ALL the posts
+const readparams = {
+  TableName: "cheetoposts",
+};
+
+// Set the writing parameters
+// THIS IS THE POST CONTENT
+// const writeparams = {
+//     TableName: "cheetoposts",
+//     Item: {
+//       number: { N: "3" },
+//       content: { S: "CONTENT GOES HERE" },
+//     },
+//   };
+
+// Create DynamoDB service object
+const dbclient = new DynamoDBClient({ region: REGION });
+
+// reading function
+async function readthedb() {
+  try {
+    const data = await dbclient.send(new ScanCommand(readparams));
+    data.Items.forEach(function (element, index, array) {
+        // change what is done to each element here
+        // content is the specific post content of the item
+      console.log(element.content.S);
+      document.querySelector('#div_name');
+    });
+  } catch (err) {
+    console.log("Error", err);
+  }
+}
+
+// writing function
+// async function writethedb() {
+//     try {
+//       const data = await dbclient.send(new PutItemCommand(writeparams));
+//       console.log(data);
+//     } catch (err) {
+//       console.error(err);
+//     }
+//   };
+
+// Call functions
+readthedb();
+// writethedb();
+</script>
+    
+
+</body>
+</html>
